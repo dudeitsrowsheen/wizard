@@ -4,55 +4,62 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/style.css">
-      <script src="js/script.js"></script>
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
 <div class="topnav">
   <a class="active">Add new User Profile</a>
 </div>
 <br>
 <br>
 <br>
-<form id="regForm" action="">
 
- <!-- One "tab" for each step in the form: -->
- <div class="tab">Email:
-      <p><input placeholder="[Required]" oninput="this.className = ''"></p>
-    </div>
-    
-    <div class="tab">Password:
-      <p><input placeholder="[Required]" oninput="this.className = ''"></p>
-    </div>
-    
-    <div class="tab">Verify Password:
-      <p><input placeholder="[Required]" oninput="this.className = ''"></p>
-    </div>
-  </div>
+<body>
 
-    <div style="overflow:auto;">
-      <div style="float:right;">
-        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-      </div>
-    </div>
-    
-    <!-- Circles which indicates the steps of the form: -->
-    <div style="text-align:center;margin-top:40px;">
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-    </div>
-    
-    </form>
+  <section>
+    <div class="container">
+      <form>
+        <div class= "step.step-1">
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab">Email:
+            <p><input placeholder="[Required]" oninput="this.className = ''"></p>
+          </div>
 
-  </body>
-  </html>
+          <div class="tab">Password:
+            <p><input placeholder="[Required]" oninput="this.className = ''"></p>
+          </div>
+
+          <div class="tab">Verify Password:
+            <p><input placeholder="[Required]" oninput="this.className = ''"></p>
+          </div>
+
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+
+        </div>
+
+      </form>
+  </section>
+
+</body>
+
+</html>
