@@ -1,9 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/script.js"></script>
+  </head>
+  <body>
+
+<div class="topnav">
+  <a class="active">Add new User Profile</a>
+</div>
+<br>
+<br>
+<br>
 <form id="regForm" action="">
 
-    <h1>Add new User Profile</h1>
-    
-    <!-- One "tab" for each step in the form: -->
-    <div class="tab">Email:
+ <!-- One "tab" for each step in the form: -->
+ <div class="tab">Email:
       <p><input placeholder="[Required]" oninput="this.className = ''"></p>
     </div>
     
@@ -14,7 +35,8 @@
     <div class="tab">Verify Password:
       <p><input placeholder="[Required]" oninput="this.className = ''"></p>
     </div>
-    
+  </div>
+
     <div style="overflow:auto;">
       <div style="float:right;">
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -31,3 +53,6 @@
     </div>
     
     </form>
+
+  </body>
+  </html>

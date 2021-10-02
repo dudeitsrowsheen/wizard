@@ -1,10 +1,22 @@
-#regForm {
-    background-color: #ffffff;
-    margin: 100px auto;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#topnav {
+  background-color: green;
+  padding: 6000px;
+}
+
+
+/* #regForm {
+    background-color:white;
+    margin: 100px;
     padding: 40px;
     width: 70%;
-    min-width: 300px;
-  }
+    min-width: 30px;
+  } */
   
   /* Style the input fields */
   input {
@@ -22,7 +34,8 @@
   
   /* Hide all steps by default: */
   .tab {
-    display: none;
+padding-left: 25%;
+padding-right: 25%
   }
   
   /* Make circles that indicate the steps of the form: */
