@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Multi Step Form #30days30submits #day-20</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+  <div class="container">
+    <form>
+
+      <div class="step step-1 active">
+        <div class="form-group">
+          <label for="firstName">Email</label>
+          <input type="text" id="Email" name="Email">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Password</label>
+          <input type="text" id="Password" name="Password">
+        </div>
+        <div class="form-group">
+          <label for="nickName">Verify Password</label>
+          <input type="text" id="VerifyPassword" name="nick-name">
+        </div>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <div class="step step-2">
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Group A</a>
+            <a href="#">Group B</a>
+            <a href="#">Group C</a>
+          </div>
+        </div>
+        <button type="button" class="previous-btn">Prev</button>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <div class="step step-3">
+        <div class="form-group">
+          <label for="Email-3">Email</label>
+          <input type="text" id="Email-3" name="Email-3">
+        </div>
+        <div class="form-group">
+          <label for="User-Group">User Group</label>
+          <input type="text" id="User-Group" name="User-Group">
+        </div>
+        <button type="button" class="previous-btn">Prev</button>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
