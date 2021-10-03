@@ -3,6 +3,7 @@ const nextBtn = document.querySelectorAll("form .next-btn");
 const prevBtn = document.querySelectorAll("form .previous-btn");
 const form = document.querySelector("form");
 
+
 nextBtn.forEach((button) => {
   button.addEventListener("click", () => {
     changeStep("next");
@@ -36,4 +37,26 @@ function changeStep(btn) {
     index--;
   }
   steps[index].classList.add("active");
-}
+};
+
+
+// Function for valid password
+ function checkPassword(form) {
+    password1 = form.password1.value;
+    password2 = form.password2.value;
+  
+    //if password1 not entered
+    if (password1 == '')
+      alert("Please enter Password");
+  
+      //if verify password not entered
+    else if (password2 == '')
+      alert("Please enter confirm password");
+  
+      //if passwords don't match
+      else if (password1 != password2) {
+        alert ("Password do not match")
+        return false;
+    }
+  
+  };
