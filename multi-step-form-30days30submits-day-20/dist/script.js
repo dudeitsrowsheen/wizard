@@ -12,7 +12,12 @@ const form = document.querySelector("form");
 
 nextBtn.forEach((button) => {
   button.addEventListener("click", () => {
-    changeStep("next");
+    let password1 = document.getElementById('password1').value
+    let password2 = document.getElementById('password2').value
+    let isValid = checkPassword(password1, password2)
+    if (isValid) {
+      changeStep("next")
+    };
   });
 });
 prevBtn.forEach((button) => {
@@ -47,22 +52,26 @@ function changeStep(btn) {
 
 
 // Function for valid password
- function checkPassword(form) {
-    password1 = form.password1.value;
-    password2 = form.password2.value;
-  
-    //if password1 not entered
-    if (password1 == '')
-      alert("Please enter Password");
-  
-      //if verify password not entered
-    else if (password2 == '')
-      alert("Please enter confirm password");
-  
-      //if passwords don't match
-      else if (password1 != password2) {
-        alert ("Password do not match")
-        return false;
-    }
-  
-  };
+function checkPassword(password1, password2) {
+
+  //if password1 not entered
+  if (password1 === '') {
+    alert("enter password")
+    return false;
+  }
+
+  //if verify password not entered
+  if (password2 === '') {
+    alert("confirm the password")
+    return false;
+
+    //if passwords don't match
+  }
+  if (password1 !== password2) {
+    alert("passwords do not match")
+    return false;
+  }
+
+  return true
+
+};
