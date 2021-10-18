@@ -75,3 +75,4 @@ function checkPassword(password1, password2) {
   return true
 
 };
+
