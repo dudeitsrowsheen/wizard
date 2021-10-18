@@ -5,8 +5,7 @@ font-size: 25px;
 color: #818181;
 margin-right: 800px;
 
-
-background-image:
+background-image: 
     url("assests/icon.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -14,6 +13,12 @@ background-image:
     background-size: 50px 50px;
     
 }
+h1{
+  margin-left: 125px;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
 
 body {
   font-family: "Lato", sans-serif;
@@ -63,10 +68,6 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-h1{
-  margin-left: 125px;
-  font-size: 20px;
-}
 
 * {
   padding: 0;
